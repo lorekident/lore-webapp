@@ -4,7 +4,7 @@
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-lg">
         <img class="mx-auto w-20 border-4 rounded-full border-green-500" src="{{ asset('images/logo/logo.png') }}" alt="Lore Kid Entrepreneurship">
-        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">{{ __('Ready to Innovate Again?') }}</h2>
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">{{ __('Grooming Future Millionaires!') }}</h2>
         <p class="mt-2 text-center text-sm text-gray-500">
             {{ __('Let’s continue building your dream') }}
         </p>
@@ -62,7 +62,7 @@
 
             <p class="mt-10 text-center text-sm text-gray-500">
                 {{ __("New here?") }}
-                <a href="{{ route('register') }}" class="text-lg font-semibold underline leading-6 text-green-600 hover:text-green-500">{{ __('Join our crew of young innovators') }}</a>
+                <a href="{{ route('register') }}" class="text-lg font-semibold underline leading-6 text-green-600 hover:text-green-500">{{ __('Join our crew of future millionaires') }}</a>
             </p>
         </div>
     </div>
