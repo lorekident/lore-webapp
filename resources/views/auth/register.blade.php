@@ -373,9 +373,14 @@
                 <!-- Submit Button -->
                 <div>
                     <button type="submit" class="flex w-full justify-center rounded-md bg-green-600 py-2 px-4 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
-                        {{ __('Register') }}
+                        {{ __('Let’s Go! Create My Account') }}
                     </button>
                 </div>
+
+                <p class="mt-10 text-center text-sm text-gray-500">
+                    {{ __("Already part of the adventure?") }}
+                    <a href="{{ route('login') }}" class="font-semibold leading-6 text-green-600 hover:text-green-500">{{ __('Sign in here') }}</a>
+                </p>
             </form>
         </div>
     </div>
