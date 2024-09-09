@@ -36,7 +36,6 @@
                         @enderror
                     </div>
                 </div>
-                sudo chown -R www-data:www-data /var/www/lore-webapp/storage
 
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
