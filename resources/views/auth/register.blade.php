@@ -124,7 +124,7 @@
                 <div>
                     <label for="allergies" class="block text-sm font-medium leading-6 text-gray-900">{{ __('Allergies (if any)') }}</label>
                     <div class="mt-2">
-                        <textarea id="allergies" name="allergies" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">{{ old('allergies') }}</textarea>
+                        <textarea id="allergies" name="allergies" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">{{ old('allergies') }}</textarea>
                         @error('allergies')
                             <span class="text-red-600 text-xs mt-2 block" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -273,7 +273,7 @@
                 <div>
                     <label for="business_idea" class="block text-sm font-medium leading-6 text-gray-900">{{ __('Do you have any specific business ideas or projects you would like to explore?') }}</label>
                     <div class="mt-2">
-                        <textarea id="business_idea" name="business_idea" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">{{ old('business_idea') }}</textarea>
+                        <textarea id="business_idea" name="business_idea" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">{{ old('business_idea') }}</textarea>
                         @error('business_idea')
                             <span class="text-red-600 text-xs mt-2 block" role="alert">
                                 <strong>{{ $message }}</strong>
