@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home', ['profile' => auth()->user()->profile]);
+        if(auth()->user()->is_admin) {
+            $nonAdminUsers = User::where('is_admin', '0')->with(['profile'])->paginate(10);
+            return view('users.index', compact('nonAdminUsers'));
+        }else{
+            return view('home', ['profile' => auth()->user()->profile]);
+        }
     }
 }

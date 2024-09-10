@@ -18,7 +18,7 @@
                         Home
                     </a>
                 </li>
-                @if(auth()->user()->is_admin)
+                @if(false)
                     <li>
                         <a href="{{ url('/users') }}" class="{{ request()->is('users') ? 'font-bold text-green-500' : 'text-gray-900' }}" aria-current="page">
                             Users
