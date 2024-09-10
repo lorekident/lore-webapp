@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         if(auth()->user()->is_admin) {
-            $nonAdminUsers = User::where('is_admin', '0')->with(['profile'])->paginate(10);
+            $nonAdminUsers = User::where('is_admin', '0')->with(['profile'])->latest()->paginate(10);
             return view('users.index', compact('nonAdminUsers'));
         }else{
             return view('home', ['profile' => auth()->user()->profile]);
