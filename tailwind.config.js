@@ -9,7 +9,10 @@ module.exports = {
         extend: {
             colors: {
                 'main': '#faf8f0'
-            }
+            },
+            fontFamily: {
+                poppins: ['Poppins', 'sans-serif'], // Add Poppins as a custom font family
+            },
         }
     },
     plugins: [

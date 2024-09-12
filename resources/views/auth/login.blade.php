@@ -6,7 +6,7 @@
         <img class="mx-auto w-20 border-4 rounded-full border-green-500" src="{{ asset('images/logo/logo.png') }}" alt="Lore Kid Entrepreneurship">
         <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">{{ __('Grooming Future Millionaires!') }}</h2>
         <p class="mt-2 text-center text-sm text-gray-500">
-            {{ __('Let’s continue building your dream') }}
+            {{ __('One step at a time') }}
         </p>
     </div>
 

@@ -26,7 +26,7 @@
     <!-- Style & Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-main min-h-screen flex flex-col">
+<body class="bg-main font-poppins min-h-screen flex flex-col">
     <div id="app">
         <!-- Header -->
         @if (!in_array(Route::currentRouteName(), ['login', 'register', 'password.request', 'password.confirm', 'password.reset']))
